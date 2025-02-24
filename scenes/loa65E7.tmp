@@ -1,0 +1,755 @@
+[gd_scene load_steps=127 format=3 uid="uid://dbwdorurn7r2t"]
+
+[ext_resource type="Theme" uid="uid://bvpqa4kh0ofvu" path="res://resources/loadout_box_theme.tres" id="1_7ewx5"]
+[ext_resource type="Texture2D" uid="uid://i4627n8mlrn" path="res://images/secondaries/Phase_Round.png" id="2_q2vqs"]
+[ext_resource type="Texture2D" uid="uid://ds502xbagvcrr" path="res://images/characters/Commando.png" id="2_uctl7"]
+[ext_resource type="Texture2D" uid="uid://ew5llbajd0dj" path="res://images/characters/Huntress.png" id="3_438g3"]
+[ext_resource type="Texture2D" uid="uid://br3fd5vpggbf2" path="res://images/secondaries/Phase_Blast.png" id="3_yu748"]
+[ext_resource type="Texture2D" uid="uid://c5dydf20lkmbp" path="res://images/characters/Bandit.png" id="4_wma8e"]
+[ext_resource type="Texture2D" uid="uid://bo08p0xfqeycr" path="res://images/primaries/Strafe.png" id="5_so1aa"]
+[ext_resource type="Texture2D" uid="uid://b8xcp4syyqblr" path="res://images/characters/Acrid.png" id="5_xbb70"]
+[ext_resource type="Texture2D" uid="uid://tfcpkd7trmys" path="res://images/specials/Frag_Grenade.png" id="6_6xfti"]
+[ext_resource type="Texture2D" uid="uid://dod474kpfqkth" path="res://images/primaries/Flurry.png" id="6_tuouw"]
+[ext_resource type="Texture2D" uid="uid://dtd0pt3drj4rr" path="res://images/characters/Artificer.png" id="6_w2fw7"]
+[ext_resource type="Texture2D" uid="uid://duonajd464s0q" path="res://images/specials/Suppressive_Fire.png" id="7_tv24b"]
+[ext_resource type="Texture2D" uid="uid://bpxib2uwcxqyk" path="res://images/characters/Captain.png" id="7_wu8tp"]
+[ext_resource type="Texture2D" uid="uid://7ewcyc4kpur7" path="res://images/characters/Chef.png" id="8_lb601"]
+[ext_resource type="Texture2D" uid="uid://chaxg7n5xducj" path="res://images/utilities/Tactical_Dive.png" id="8_odatu"]
+[ext_resource type="Texture2D" uid="uid://bnvbma86p8y5n" path="res://images/utilities/Tactical_Slide.png" id="9_4q7t0"]
+[ext_resource type="Texture2D" uid="uid://dnc3jaccjlv55" path="res://images/utilities/Blink.png" id="9_bd2jy"]
+[ext_resource type="Texture2D" uid="uid://demawowr47wcs" path="res://images/characters/Engineer.png" id="9_ta6lf"]
+[ext_resource type="Texture2D" uid="uid://pqeylyok665s" path="res://images/primaries/Burst.png" id="9_xjdbr"]
+[ext_resource type="Texture2D" uid="uid://cl8ghxi2yedp1" path="res://images/primaries/Blast.png" id="10_6caid"]
+[ext_resource type="Texture2D" uid="uid://w882wc0ynyhl" path="res://images/characters/False_Son.png" id="10_j603l"]
+[ext_resource type="Texture2D" uid="uid://chgo5urch5hoc" path="res://images/utilities/Phase_Blink.png" id="10_yhl2e"]
+[ext_resource type="Texture2D" uid="uid://ck61bfvk8kybs" path="res://images/characters/Loader.png" id="11_wheq7"]
+[ext_resource type="Texture2D" uid="uid://b3r82ujg4rlpq" path="res://images/characters/Mercenary.png" id="12_181hg"]
+[ext_resource type="Texture2D" uid="uid://cr0m078yqyykl" path="res://images/passives/Poison.png" id="12_b4ihk"]
+[ext_resource type="Texture2D" uid="uid://rw4p2is6v6s6" path="res://images/specials/Arrow_Rain.png" id="13_pf2r0"]
+[ext_resource type="Texture2D" uid="uid://b28kk7fvooeoe" path="res://images/characters/MUL-T.png" id="13_wxykg"]
+[ext_resource type="Texture2D" uid="uid://n2s2quuaax1o" path="res://images/passives/Blight.png" id="13_xrr4h"]
+[ext_resource type="Texture2D" uid="uid://btgnilmxc4nos" path="res://images/characters/Railgunner.png" id="14_8lmm4"]
+[ext_resource type="Texture2D" uid="uid://d2phk77i3jhi3" path="res://images/characters/REX.png" id="15_b7efm"]
+[ext_resource type="Texture2D" uid="uid://btq4p8rmja6kf" path="res://images/secondaries/Serrated_Dagger.png" id="15_gitk6"]
+[ext_resource type="Texture2D" uid="uid://dcxrfsxq7en86" path="res://images/secondaries/Serrated_Shiv.png" id="16_6sc2v"]
+[ext_resource type="Texture2D" uid="uid://dvibko60bqj1p" path="res://images/characters/Seeker.png" id="16_7r23i"]
+[ext_resource type="Texture2D" uid="uid://cl8mfgdwpwbkk" path="res://images/characters/Void_Fiend.png" id="17_tm16g"]
+[ext_resource type="Texture2D" uid="uid://th56ewapsr2l" path="res://images/characters/Unknown_Character.png" id="18_7rxga"]
+[ext_resource type="Texture2D" uid="uid://dnoo7mw1jprxc" path="res://images/passives/Unknown_Ability.png" id="19_8vx4k"]
+[ext_resource type="Script" path="res://scripts/Character.gd" id="19_tabup"]
+[ext_resource type="Texture2D" uid="uid://b4blbl8molxcx" path="res://images/specials/Ballista.png" id="20_7dylq"]
+[ext_resource type="Texture2D" uid="uid://cw7uhmb3iq4sq" path="res://images/secondaries/Neurotoxin.png" id="20_fhir7"]
+[ext_resource type="Texture2D" uid="uid://bfuoj8rk7uyhi" path="res://images/secondaries/Ravenous_Bite.png" id="21_btoah"]
+[ext_resource type="Texture2D" uid="uid://buurlp8ymuors" path="res://images/specials/Lights_Out.png" id="21_i7v8t"]
+[ext_resource type="Texture2D" uid="uid://dewg6t6c7j7pa" path="res://images/specials/Desperado.png" id="22_73v0w"]
+[ext_resource type="Texture2D" uid="uid://sdt30spnyx8r" path="res://images/primaries/Flame_Bolt.png" id="26_5flhc"]
+[ext_resource type="Texture2D" uid="uid://bfk3yeuikm2uv" path="res://images/primaries/Plasma_Bolt.png" id="27_na21b"]
+[ext_resource type="Texture2D" uid="uid://bg1cx311uv0kc" path="res://images/utilities/Caustic_Leap.png" id="28_h1gio"]
+[ext_resource type="Texture2D" uid="uid://b3mwpntdyfvyg" path="res://images/utilities/Orbital_Probe.png" id="28_igpbl"]
+[ext_resource type="Texture2D" uid="uid://fwmoiaa2g2i0" path="res://images/utilities/Frenzied_Leap.png" id="29_hjjnr"]
+[ext_resource type="Texture2D" uid="uid://dks4qcu1b1ybt" path="res://images/utilities/OGM-72_DIABLO_Strike.png" id="29_jtuvy"]
+[ext_resource type="Texture2D" uid="uid://dvw7dvggsftvj" path="res://images/primaries/Dice.png" id="30_5c5ti"]
+[ext_resource type="Texture2D" uid="uid://dvembq063pmvy" path="res://images/secondaries/Pressure_Mines.png" id="31_np1m8"]
+[ext_resource type="Texture2D" uid="uid://0gcom45x7x2n" path="res://images/secondaries/Spider_Mines.png" id="32_e658n"]
+[ext_resource type="Texture2D" uid="uid://b7ewt7kg0lmxx" path="res://images/primaries/Club_of_the_Forsaken.png" id="33_ggvow"]
+[ext_resource type="Texture2D" uid="uid://d2t3f1mrl3q18" path="res://images/secondaries/Grapple_Fist.png" id="34_g3snl"]
+[ext_resource type="Texture2D" uid="uid://dulyj5q3215o0" path="res://images/secondaries/Spiked_Fist.png" id="35_j84sv"]
+[ext_resource type="Texture2D" uid="uid://d0avtqqjo3fhy" path="res://images/secondaries/Whirlwind.png" id="36_kbckp"]
+[ext_resource type="Texture2D" uid="uid://degnv120htsau" path="res://images/secondaries/Rising_Thunder.png" id="37_tig8m"]
+[ext_resource type="Texture2D" uid="uid://cxvr4rhoqagc8" path="res://images/primaries/Auto-Nailgun.png" id="38_cdtsn"]
+[ext_resource type="Texture2D" uid="uid://cp8v58814310v" path="res://images/primaries/Rebar_Puncher.png" id="39_7xftf"]
+[ext_resource type="Texture2D" uid="uid://cjhewhdjo8tky" path="res://images/primaries/Scrap_Launcher.png" id="40_8fdhq"]
+[ext_resource type="Texture2D" uid="uid://3qmfbr3d0str" path="res://images/primaries/Power-Saw.png" id="41_68cle"]
+[ext_resource type="Texture2D" uid="uid://cifepow0ljllo" path="res://images/secondaries/M99_Sniper.png" id="42_yok1l"]
+[ext_resource type="Texture2D" uid="uid://6r0ji4xfdewm" path="res://images/secondaries/HH44_Marksman.png" id="43_8soif"]
+[ext_resource type="Texture2D" uid="uid://c0asx14nseh0w" path="res://images/secondaries/DIRECTIVE_Drill.png" id="44_gtjdy"]
+[ext_resource type="Texture2D" uid="uid://cw2mikd17y3jm" path="res://images/secondaries/Seed_Barrage.png" id="45_datr8"]
+[ext_resource type="Texture2D" uid="uid://chgnpqy44i1nj" path="res://images/primaries/Spirit_Punch.png" id="46_io1y2"]
+[ext_resource type="Texture2D" uid="uid://bkl86r5xjbjia" path="res://images/primaries/Drown.png" id="47_msvcm"]
+[ext_resource type="Script" path="res://scripts/Ability1.gd" id="51_oh2v4"]
+[ext_resource type="Texture2D" uid="uid://8orfb5waf3bs" path="res://images/secondaries/Cast_Nano-Spear.png" id="56_7svse"]
+[ext_resource type="Texture2D" uid="uid://dl8u0hba2u0i8" path="res://images/secondaries/Charged_Nano-Bomb.png" id="57_kaibc"]
+[ext_resource type="Texture2D" uid="uid://crjb7d0pb4a23" path="res://images/specials/Beacon_Hacking.png" id="58_u1cwv"]
+[ext_resource type="Texture2D" uid="uid://c2aox1ul7tkd" path="res://images/specials/Beacon_Healing.png" id="59_lifif"]
+[ext_resource type="Texture2D" uid="uid://c51qaemulfgor" path="res://images/specials/Beacon_Resupply.png" id="60_t0aim"]
+[ext_resource type="Texture2D" uid="uid://bk8g4hlvf2so4" path="res://images/specials/Beacon_Shocking.png" id="61_f1txu"]
+[ext_resource type="Texture2D" uid="uid://ule7mgg8nb4a" path="res://images/utilities/Roll.png" id="62_hhv00"]
+[ext_resource type="Texture2D" uid="uid://dms6ky4hemqqc" path="res://images/utilities/Bubble_Shield.png" id="63_yiq1y"]
+[ext_resource type="Texture2D" uid="uid://bxr2tulmvmnwq" path="res://images/utilities/Thermal_Harpoons.png" id="64_8r664"]
+[ext_resource type="Texture2D" uid="uid://b33oj3a22gclf" path="res://images/utilities/Step_of_the_Brothers.png" id="65_vydg4"]
+[ext_resource type="Texture2D" uid="uid://c0drp7ksdbgcu" path="res://images/utilities/Charged_Gauntlet.png" id="66_uaatd"]
+[ext_resource type="Texture2D" uid="uid://d8sacox335sn" path="res://images/utilities/Thunder_Gauntlet.png" id="67_61knm"]
+[ext_resource type="Texture2D" uid="uid://x172g8l8dfns" path="res://images/utilities/Blinding_Assault.png" id="68_j1wpn"]
+[ext_resource type="Texture2D" uid="uid://4786lpeq46qs" path="res://images/utilities/Focused_Assault.png" id="69_xmp0o"]
+[ext_resource type="Texture2D" uid="uid://da7ji8i2xgfwq" path="res://images/utilities/Concussion_Device.png" id="70_8hlcw"]
+[ext_resource type="Texture2D" uid="uid://cieaj10euwqg4" path="res://images/utilities/Polar_Field_Device.png" id="71_iwrds"]
+[ext_resource type="Texture2D" uid="uid://b7natea3mv4xf" path="res://images/utilities/DIRECTIVE_Disperse.png" id="72_svsyy"]
+[ext_resource type="Texture2D" uid="uid://chl881bjsnnk1" path="res://images/utilities/Bramble_Volley.png" id="73_l5o8w"]
+[ext_resource type="Texture2D" uid="uid://ty176usrxkm4" path="res://images/secondaries/Unseen_Hand.png" id="74_e0v25"]
+[ext_resource type="Texture2D" uid="uid://bbfj23y1nf01q" path="res://images/secondaries/Soul_Spiral.png" id="75_gsfw6"]
+[ext_resource type="Texture2D" uid="uid://cria211iik2ro" path="res://images/utilities/Trespass.png" id="76_5qsa3"]
+[ext_resource type="Texture2D" uid="uid://cq3mtl4food8s" path="res://images/specials/Flamethrower.png" id="85_v0fr2"]
+[ext_resource type="Texture2D" uid="uid://bwkqbpg6ihs3l" path="res://images/specials/Ion_Surge.png" id="86_llkde"]
+[ext_resource type="Texture2D" uid="uid://c72tnt1yncldu" path="res://images/specials/Yes__Chef.png" id="87_5ma0k"]
+[ext_resource type="Texture2D" uid="uid://dh11ey1sjgrkp" path="res://images/specials/Glaze.png" id="88_uy3qv"]
+[ext_resource type="Texture2D" uid="uid://cjae40nw0k8y2" path="res://images/specials/TR12_Gauss_Auto-Turret.png" id="89_uhiff"]
+[ext_resource type="Texture2D" uid="uid://ddafyinvmlyqp" path="res://images/specials/TR58_Carbonizer_Turret.png" id="90_s84xu"]
+[ext_resource type="Texture2D" uid="uid://druvtnvak5vvb" path="res://images/specials/Laser_of_the_Father.png" id="91_6ywp3"]
+[ext_resource type="Texture2D" uid="uid://drgiref04d8dm" path="res://images/specials/Laser_Burst.png" id="92_b7iqa"]
+[ext_resource type="Texture2D" uid="uid://3geob6hhre4c" path="res://images/specials/M551_Pylon.png" id="93_3b8sm"]
+[ext_resource type="Texture2D" uid="uid://bwu2qh0jqxa27" path="res://images/specials/Thunderslam.png" id="94_4i310"]
+[ext_resource type="Texture2D" uid="uid://cj0o5uqnbkpcj" path="res://images/specials/Eviscerate.png" id="95_bbpqn"]
+[ext_resource type="Texture2D" uid="uid://bxdalt1fugy7v" path="res://images/specials/Slicing_Winds.png" id="96_4cclm"]
+[ext_resource type="Texture2D" uid="uid://cfl50bxbb11vm" path="res://images/specials/Retool.png" id="97_upjra"]
+[ext_resource type="Texture2D" uid="uid://bunk1ryv8a20y" path="res://images/specials/Power_Mode.png" id="98_uyvij"]
+[ext_resource type="Texture2D" uid="uid://cqi3lh3m01ks0" path="res://images/specials/Supercharge.png" id="99_2imw1"]
+[ext_resource type="Texture2D" uid="uid://doar06qjqm47y" path="res://images/specials/Cryocharge.png" id="100_6wow8"]
+[ext_resource type="Texture2D" uid="uid://bthtx4v1xt4p0" path="res://images/specials/DIRECTIVE_Harvest.png" id="101_ftiq2"]
+[ext_resource type="Texture2D" uid="uid://cxa8peeidj3y6" path="res://images/specials/Tangling_Growth.png" id="102_yy6ga"]
+[ext_resource type="Texture2D" uid="uid://dhi5d1dudjrbd" path="res://images/specials/Meditate.png" id="103_to7h1"]
+[ext_resource type="Texture2D" uid="uid://dt6l44bheaikb" path="res://images/specials/Suppress.png" id="104_roru4"]
+[ext_resource type="Texture2D" uid="uid://bkb3nn61a4sig" path="res://images/stages/Distant_Roost.png" id="105_fn457"]
+[ext_resource type="Texture2D" uid="uid://dfntocjqr4kmf" path="res://images/stages/Shattered_Abodes.png" id="106_7btmx"]
+[ext_resource type="Texture2D" uid="uid://c16ls2ad7ihow" path="res://images/stages/Siphoned_Forest.png" id="107_m1taw"]
+[ext_resource type="Texture2D" uid="uid://05vgqnd63pf7" path="res://images/stages/Titanic_Plains.png" id="108_lq1p0"]
+[ext_resource type="Texture2D" uid="uid://cq3evi7gmr60v" path="res://images/stages/Verdant_Falls.png" id="109_4npff"]
+[ext_resource type="Texture2D" uid="uid://hwyxxdi4cq4m" path="res://images/stages/Abandoned_Aqueduct.png" id="110_q3eyo"]
+[ext_resource type="Texture2D" uid="uid://de0eloim3i2hw" path="res://images/stages/Aphelian_Sanctuary.png" id="111_mq8b6"]
+[ext_resource type="Texture2D" uid="uid://lv8j4fo7akjw" path="res://images/stages/Reformed_Altar.png" id="112_n5rjc"]
+[ext_resource type="Texture2D" uid="uid://bvh03xxukjf" path="res://images/stages/Wetland_Aspect.png" id="113_fhiws"]
+[ext_resource type="Texture2D" uid="uid://1km88t2jfydf" path="res://images/stages/Scorched_Acres.png" id="114_fg5wa"]
+[ext_resource type="Texture2D" uid="uid://dr3v2pi6q4m6n" path="res://images/stages/Rallypoint_Delta.png" id="115_dy4n7"]
+[ext_resource type="Texture2D" uid="uid://ij5xy3kbiht1" path="res://images/stages/Sulfur_Pools.png" id="116_3blh1"]
+[ext_resource type="Texture2D" uid="uid://canywphxbmkdx" path="res://images/stages/Treeborn_Colony.png" id="117_xvs1k"]
+[ext_resource type="Texture2D" uid="uid://c7k5f3yrmo3qj" path="res://images/stages/Abyssal_Depths.png" id="118_cjre6"]
+[ext_resource type="Texture2D" uid="uid://x6gsllu5txko" path="res://images/stages/Sirens_Call.png" id="119_cpcee"]
+[ext_resource type="Texture2D" uid="uid://4l8t4p50pkcw" path="res://images/stages/Sundered_Grove.png" id="120_qtjg1"]
+[ext_resource type="Texture2D" uid="uid://ci45axnlf6cpo" path="res://images/stages/Sky_Meadow.png" id="121_ju2um"]
+[ext_resource type="Texture2D" uid="uid://blw5w6ihpvuvu" path="res://images/stages/Helminth_Hatchery.png" id="122_8tnoc"]
+
+[node name="LoadoutBox" type="Control"]
+layout_mode = 3
+anchors_preset = 0
+
+[node name="BackgroundColor" type="ColorRect" parent="."]
+layout_mode = 0
+offset_right = 321.0
+offset_bottom = 852.0
+color = Color(0.141176, 0.27451, 0.470588, 1)
+
+[node name="Character" type="OptionButton" parent="."]
+layout_mode = 0
+offset_left = 15.0
+offset_top = 4.0
+offset_right = 305.0
+offset_bottom = 268.0
+theme = ExtResource("1_7ewx5")
+flat = true
+expand_icon = true
+item_count = 17
+selected = 0
+popup/item_0/text = ""
+popup/item_0/icon = ExtResource("18_7rxga")
+popup/item_0/id = 0
+popup/item_1/text = ""
+popup/item_1/icon = ExtResource("2_uctl7")
+popup/item_1/id = 1
+popup/item_2/text = ""
+popup/item_2/icon = ExtResource("3_438g3")
+popup/item_2/id = 2
+popup/item_3/text = ""
+popup/item_3/icon = ExtResource("4_wma8e")
+popup/item_3/id = 3
+popup/item_4/text = ""
+popup/item_4/icon = ExtResource("5_xbb70")
+popup/item_4/id = 4
+popup/item_5/text = ""
+popup/item_5/icon = ExtResource("6_w2fw7")
+popup/item_5/id = 5
+popup/item_6/text = ""
+popup/item_6/icon = ExtResource("7_wu8tp")
+popup/item_6/id = 6
+popup/item_7/text = ""
+popup/item_7/icon = ExtResource("8_lb601")
+popup/item_7/id = 7
+popup/item_8/text = ""
+popup/item_8/icon = ExtResource("9_ta6lf")
+popup/item_8/id = 8
+popup/item_9/text = ""
+popup/item_9/icon = ExtResource("10_j603l")
+popup/item_9/id = 9
+popup/item_10/text = ""
+popup/item_10/icon = ExtResource("11_wheq7")
+popup/item_10/id = 10
+popup/item_11/text = ""
+popup/item_11/icon = ExtResource("12_181hg")
+popup/item_11/id = 11
+popup/item_12/text = ""
+popup/item_12/icon = ExtResource("13_wxykg")
+popup/item_12/id = 12
+popup/item_13/text = ""
+popup/item_13/icon = ExtResource("14_8lmm4")
+popup/item_13/id = 13
+popup/item_14/text = ""
+popup/item_14/icon = ExtResource("15_b7efm")
+popup/item_14/id = 14
+popup/item_15/text = ""
+popup/item_15/icon = ExtResource("16_7r23i")
+popup/item_15/id = 15
+popup/item_16/text = ""
+popup/item_16/icon = ExtResource("17_tm16g")
+popup/item_16/id = 16
+script = ExtResource("19_tabup")
+
+[node name="Ability1" type="OptionButton" parent="."]
+layout_mode = 0
+offset_left = 6.0
+offset_top = 285.0
+offset_right = 168.0
+offset_bottom = 421.0
+scale = Vector2(0.66, 0.66)
+theme = ExtResource("1_7ewx5")
+flat = true
+item_count = 31
+selected = 0
+popup/item_0/text = ""
+popup/item_0/icon = ExtResource("19_8vx4k")
+popup/item_0/id = 0
+popup/item_1/text = ""
+popup/item_1/icon = ExtResource("3_yu748")
+popup/item_1/id = 1
+popup/item_2/text = ""
+popup/item_2/icon = ExtResource("2_q2vqs")
+popup/item_2/id = 2
+popup/item_3/text = ""
+popup/item_3/icon = ExtResource("5_so1aa")
+popup/item_3/id = 3
+popup/item_4/text = ""
+popup/item_4/icon = ExtResource("6_tuouw")
+popup/item_4/id = 4
+popup/item_5/text = ""
+popup/item_5/icon = ExtResource("9_xjdbr")
+popup/item_5/id = 5
+popup/item_6/text = ""
+popup/item_6/icon = ExtResource("10_6caid")
+popup/item_6/id = 6
+popup/item_7/text = ""
+popup/item_7/icon = ExtResource("12_b4ihk")
+popup/item_7/id = 7
+popup/item_8/text = ""
+popup/item_8/icon = ExtResource("13_xrr4h")
+popup/item_8/id = 8
+popup/item_9/text = ""
+popup/item_9/icon = ExtResource("26_5flhc")
+popup/item_9/id = 9
+popup/item_10/text = ""
+popup/item_10/icon = ExtResource("27_na21b")
+popup/item_10/id = 10
+popup/item_11/text = ""
+popup/item_11/icon = ExtResource("28_igpbl")
+popup/item_11/id = 11
+popup/item_12/text = ""
+popup/item_12/icon = ExtResource("29_jtuvy")
+popup/item_12/id = 12
+popup/item_13/text = ""
+popup/item_13/icon = ExtResource("30_5c5ti")
+popup/item_13/id = 13
+popup/item_14/text = ""
+popup/item_14/icon = ExtResource("31_np1m8")
+popup/item_14/id = 14
+popup/item_15/text = ""
+popup/item_15/icon = ExtResource("32_e658n")
+popup/item_15/id = 15
+popup/item_16/text = ""
+popup/item_16/icon = ExtResource("33_ggvow")
+popup/item_16/id = 16
+popup/item_17/text = ""
+popup/item_17/icon = ExtResource("34_g3snl")
+popup/item_17/id = 17
+popup/item_18/text = ""
+popup/item_18/icon = ExtResource("35_j84sv")
+popup/item_18/id = 18
+popup/item_19/text = ""
+popup/item_19/icon = ExtResource("36_kbckp")
+popup/item_19/id = 19
+popup/item_20/text = ""
+popup/item_20/icon = ExtResource("37_tig8m")
+popup/item_20/id = 20
+popup/item_21/text = ""
+popup/item_21/icon = ExtResource("38_cdtsn")
+popup/item_21/id = 21
+popup/item_22/text = ""
+popup/item_22/icon = ExtResource("39_7xftf")
+popup/item_22/id = 22
+popup/item_23/text = ""
+popup/item_23/icon = ExtResource("40_8fdhq")
+popup/item_23/id = 23
+popup/item_24/text = ""
+popup/item_24/icon = ExtResource("41_68cle")
+popup/item_24/id = 24
+popup/item_25/text = ""
+popup/item_25/icon = ExtResource("42_yok1l")
+popup/item_25/id = 25
+popup/item_26/text = ""
+popup/item_26/icon = ExtResource("43_8soif")
+popup/item_26/id = 26
+popup/item_27/text = ""
+popup/item_27/icon = ExtResource("44_gtjdy")
+popup/item_27/id = 27
+popup/item_28/text = ""
+popup/item_28/icon = ExtResource("45_datr8")
+popup/item_28/id = 28
+popup/item_29/text = ""
+popup/item_29/icon = ExtResource("46_io1y2")
+popup/item_29/id = 29
+popup/item_30/text = ""
+popup/item_30/icon = ExtResource("47_msvcm")
+popup/item_30/id = 30
+script = ExtResource("51_oh2v4")
+
+[node name="Ability2" type="OptionButton" parent="."]
+layout_mode = 0
+offset_left = 113.0
+offset_top = 285.0
+offset_right = 275.0
+offset_bottom = 421.0
+scale = Vector2(0.66, 0.66)
+theme = ExtResource("1_7ewx5")
+flat = true
+item_count = 34
+selected = 0
+popup/item_0/text = ""
+popup/item_0/icon = ExtResource("19_8vx4k")
+popup/item_0/id = 0
+popup/item_1/text = ""
+popup/item_1/icon = ExtResource("8_odatu")
+popup/item_1/id = 1
+popup/item_2/text = ""
+popup/item_2/icon = ExtResource("9_4q7t0")
+popup/item_2/id = 2
+popup/item_3/text = ""
+popup/item_3/icon = ExtResource("9_bd2jy")
+popup/item_3/id = 3
+popup/item_4/text = ""
+popup/item_4/icon = ExtResource("10_yhl2e")
+popup/item_4/id = 4
+popup/item_5/text = ""
+popup/item_5/icon = ExtResource("15_gitk6")
+popup/item_5/id = 5
+popup/item_6/text = ""
+popup/item_6/icon = ExtResource("16_6sc2v")
+popup/item_6/id = 6
+popup/item_7/text = ""
+popup/item_7/icon = ExtResource("20_fhir7")
+popup/item_7/id = 7
+popup/item_8/text = ""
+popup/item_8/icon = ExtResource("21_btoah")
+popup/item_8/id = 8
+popup/item_9/text = ""
+popup/item_9/icon = ExtResource("56_7svse")
+popup/item_9/id = 9
+popup/item_10/text = ""
+popup/item_10/icon = ExtResource("57_kaibc")
+popup/item_10/id = 10
+popup/item_11/text = ""
+popup/item_11/icon = ExtResource("58_u1cwv")
+popup/item_11/id = 11
+popup/item_12/text = ""
+popup/item_12/icon = ExtResource("59_lifif")
+popup/item_12/id = 12
+popup/item_13/text = ""
+popup/item_13/icon = ExtResource("60_t0aim")
+popup/item_13/id = 13
+popup/item_14/text = ""
+popup/item_14/icon = ExtResource("61_f1txu")
+popup/item_14/id = 14
+popup/item_15/text = ""
+popup/item_15/icon = ExtResource("62_hhv00")
+popup/item_15/id = 15
+popup/item_16/text = ""
+popup/item_16/icon = ExtResource("63_yiq1y")
+popup/item_16/id = 16
+popup/item_17/text = ""
+popup/item_17/icon = ExtResource("64_8r664")
+popup/item_17/id = 17
+popup/item_18/text = ""
+popup/item_18/icon = ExtResource("65_vydg4")
+popup/item_18/id = 18
+popup/item_19/text = ""
+popup/item_19/icon = ExtResource("66_uaatd")
+popup/item_19/id = 19
+popup/item_20/text = ""
+popup/item_20/icon = ExtResource("67_61knm")
+popup/item_20/id = 20
+popup/item_21/text = ""
+popup/item_21/icon = ExtResource("68_j1wpn")
+popup/item_21/id = 21
+popup/item_22/text = ""
+popup/item_22/icon = ExtResource("69_xmp0o")
+popup/item_22/id = 22
+popup/item_23/text = ""
+popup/item_23/icon = ExtResource("38_cdtsn")
+popup/item_23/id = 23
+popup/item_24/text = ""
+popup/item_24/icon = ExtResource("39_7xftf")
+popup/item_24/id = 24
+popup/item_25/text = ""
+popup/item_25/icon = ExtResource("40_8fdhq")
+popup/item_25/id = 25
+popup/item_26/text = ""
+popup/item_26/icon = ExtResource("41_68cle")
+popup/item_26/id = 26
+popup/item_27/text = ""
+popup/item_27/icon = ExtResource("70_8hlcw")
+popup/item_27/id = 27
+popup/item_28/text = ""
+popup/item_28/icon = ExtResource("71_iwrds")
+popup/item_28/id = 28
+popup/item_29/text = ""
+popup/item_29/icon = ExtResource("72_svsyy")
+popup/item_29/id = 29
+popup/item_30/text = ""
+popup/item_30/icon = ExtResource("73_l5o8w")
+popup/item_30/id = 30
+popup/item_31/text = ""
+popup/item_31/icon = ExtResource("74_e0v25")
+popup/item_31/id = 31
+popup/item_32/text = ""
+popup/item_32/icon = ExtResource("75_gsfw6")
+popup/item_32/id = 32
+popup/item_33/text = ""
+popup/item_33/icon = ExtResource("76_5qsa3")
+popup/item_33/id = 33
+
+[node name="Ability3" type="OptionButton" parent="."]
+layout_mode = 0
+offset_left = 217.0
+offset_top = 285.0
+offset_right = 379.0
+offset_bottom = 421.0
+scale = Vector2(0.66, 0.66)
+theme = ExtResource("1_7ewx5")
+flat = true
+item_count = 32
+selected = 0
+popup/item_0/text = ""
+popup/item_0/icon = ExtResource("6_6xfti")
+popup/item_0/id = 2
+popup/item_1/text = ""
+popup/item_1/icon = ExtResource("7_tv24b")
+popup/item_1/id = 1
+popup/item_2/text = ""
+popup/item_2/icon = ExtResource("13_pf2r0")
+popup/item_2/id = 2
+popup/item_3/text = ""
+popup/item_3/icon = ExtResource("20_7dylq")
+popup/item_3/id = 3
+popup/item_4/text = ""
+popup/item_4/icon = ExtResource("21_i7v8t")
+popup/item_4/id = 4
+popup/item_5/text = ""
+popup/item_5/icon = ExtResource("22_73v0w")
+popup/item_5/id = 5
+popup/item_6/text = ""
+popup/item_6/icon = ExtResource("28_h1gio")
+popup/item_6/id = 6
+popup/item_7/text = ""
+popup/item_7/icon = ExtResource("29_hjjnr")
+popup/item_7/id = 7
+popup/item_8/text = ""
+popup/item_8/icon = ExtResource("85_v0fr2")
+popup/item_8/id = 8
+popup/item_9/text = ""
+popup/item_9/icon = ExtResource("86_llkde")
+popup/item_9/id = 9
+popup/item_10/text = ""
+popup/item_10/icon = ExtResource("58_u1cwv")
+popup/item_10/id = 10
+popup/item_11/text = ""
+popup/item_11/icon = ExtResource("59_lifif")
+popup/item_11/id = 11
+popup/item_12/text = ""
+popup/item_12/icon = ExtResource("60_t0aim")
+popup/item_12/id = 12
+popup/item_13/text = ""
+popup/item_13/icon = ExtResource("61_f1txu")
+popup/item_13/id = 13
+popup/item_14/text = ""
+popup/item_14/icon = ExtResource("87_5ma0k")
+popup/item_14/id = 14
+popup/item_15/text = ""
+popup/item_15/icon = ExtResource("88_uy3qv")
+popup/item_15/id = 15
+popup/item_16/text = ""
+popup/item_16/icon = ExtResource("89_uhiff")
+popup/item_16/id = 16
+popup/item_17/text = ""
+popup/item_17/icon = ExtResource("90_s84xu")
+popup/item_17/id = 17
+popup/item_18/text = ""
+popup/item_18/icon = ExtResource("91_6ywp3")
+popup/item_18/id = 18
+popup/item_19/text = ""
+popup/item_19/icon = ExtResource("92_b7iqa")
+popup/item_19/id = 19
+popup/item_20/text = ""
+popup/item_20/icon = ExtResource("93_3b8sm")
+popup/item_20/id = 20
+popup/item_21/text = ""
+popup/item_21/icon = ExtResource("94_4i310")
+popup/item_21/id = 21
+popup/item_22/text = ""
+popup/item_22/icon = ExtResource("95_bbpqn")
+popup/item_22/id = 22
+popup/item_23/text = ""
+popup/item_23/icon = ExtResource("96_4cclm")
+popup/item_23/id = 23
+popup/item_24/text = ""
+popup/item_24/icon = ExtResource("97_upjra")
+popup/item_24/id = 24
+popup/item_25/text = ""
+popup/item_25/icon = ExtResource("98_uyvij")
+popup/item_25/id = 25
+popup/item_26/text = ""
+popup/item_26/icon = ExtResource("99_2imw1")
+popup/item_26/id = 26
+popup/item_27/text = ""
+popup/item_27/icon = ExtResource("100_6wow8")
+popup/item_27/id = 27
+popup/item_28/text = ""
+popup/item_28/icon = ExtResource("101_ftiq2")
+popup/item_28/id = 28
+popup/item_29/text = ""
+popup/item_29/icon = ExtResource("102_yy6ga")
+popup/item_29/id = 29
+popup/item_30/text = ""
+popup/item_30/icon = ExtResource("103_to7h1")
+popup/item_30/id = 30
+popup/item_31/text = ""
+popup/item_31/icon = ExtResource("104_roru4")
+popup/item_31/id = 31
+
+[node name="Stage1" type="OptionButton" parent="."]
+layout_mode = 0
+offset_left = 34.0
+offset_top = 384.0
+offset_right = 428.0
+offset_bottom = 608.0
+scale = Vector2(0.275, 0.275)
+theme = ExtResource("1_7ewx5")
+flat = true
+item_count = 5
+selected = 0
+allow_reselect = true
+popup/item_0/text = ""
+popup/item_0/icon = ExtResource("105_fn457")
+popup/item_0/id = 0
+popup/item_1/text = ""
+popup/item_1/icon = ExtResource("106_7btmx")
+popup/item_1/id = 1
+popup/item_2/text = ""
+popup/item_2/icon = ExtResource("107_m1taw")
+popup/item_2/id = 2
+popup/item_3/text = ""
+popup/item_3/icon = ExtResource("108_lq1p0")
+popup/item_3/id = 3
+popup/item_4/text = ""
+popup/item_4/icon = ExtResource("109_4npff")
+popup/item_4/id = 4
+
+[node name="Stage2" type="OptionButton" parent="."]
+layout_mode = 0
+offset_left = 179.0
+offset_top = 384.0
+offset_right = 573.0
+offset_bottom = 608.0
+scale = Vector2(0.275, 0.275)
+theme = ExtResource("1_7ewx5")
+flat = true
+item_count = 4
+selected = 0
+allow_reselect = true
+popup/item_0/text = ""
+popup/item_0/icon = ExtResource("110_q3eyo")
+popup/item_0/id = 0
+popup/item_1/text = ""
+popup/item_1/icon = ExtResource("111_mq8b6")
+popup/item_1/id = 1
+popup/item_2/text = ""
+popup/item_2/icon = ExtResource("112_n5rjc")
+popup/item_2/id = 2
+popup/item_3/text = ""
+popup/item_3/icon = ExtResource("113_fhiws")
+popup/item_3/id = 3
+
+[node name="Stage3" type="OptionButton" parent="."]
+layout_mode = 0
+offset_left = 34.0
+offset_top = 452.0
+offset_right = 428.0
+offset_bottom = 676.0
+scale = Vector2(0.275, 0.275)
+theme = ExtResource("1_7ewx5")
+flat = true
+item_count = 4
+selected = 0
+allow_reselect = true
+popup/item_0/text = ""
+popup/item_0/icon = ExtResource("114_fg5wa")
+popup/item_0/id = 0
+popup/item_1/text = ""
+popup/item_1/icon = ExtResource("115_dy4n7")
+popup/item_1/id = 1
+popup/item_2/text = ""
+popup/item_2/icon = ExtResource("116_3blh1")
+popup/item_2/id = 2
+popup/item_3/text = ""
+popup/item_3/icon = ExtResource("117_xvs1k")
+popup/item_3/id = 3
+
+[node name="Stage4" type="OptionButton" parent="."]
+layout_mode = 0
+offset_left = 179.0
+offset_top = 452.0
+offset_right = 573.0
+offset_bottom = 676.0
+scale = Vector2(0.275, 0.275)
+theme = ExtResource("1_7ewx5")
+flat = true
+item_count = 3
+selected = 0
+allow_reselect = true
+popup/item_0/text = ""
+popup/item_0/icon = ExtResource("118_cjre6")
+popup/item_0/id = 0
+popup/item_1/text = ""
+popup/item_1/icon = ExtResource("119_cpcee")
+popup/item_1/id = 1
+popup/item_2/text = ""
+popup/item_2/icon = ExtResource("120_qtjg1")
+popup/item_2/id = 2
+
+[node name="Stage5" type="OptionButton" parent="."]
+layout_mode = 0
+offset_left = 107.0
+offset_top = 519.0
+offset_right = 501.0
+offset_bottom = 743.0
+scale = Vector2(0.275, 0.275)
+theme = ExtResource("1_7ewx5")
+flat = true
+item_count = 2
+selected = 0
+allow_reselect = true
+popup/item_0/text = ""
+popup/item_0/icon = ExtResource("121_ju2um")
+popup/item_0/id = 0
+popup/item_1/text = ""
+popup/item_1/icon = ExtResource("122_8tnoc")
+popup/item_1/id = 1
+
+[node name="Racer1" type="HBoxContainer" parent="."]
+layout_mode = 0
+offset_left = 14.0
+offset_top = 588.0
+offset_right = 310.0
+offset_bottom = 641.0
+theme = ExtResource("1_7ewx5")
+
+[node name="Name" type="TextEdit" parent="Racer1"]
+custom_minimum_size = Vector2(160, 53)
+layout_mode = 2
+theme_override_font_sizes/font_size = 26
+placeholder_text = "Name"
+
+[node name="Time" type="TextEdit" parent="Racer1"]
+custom_minimum_size = Vector2(90, 53)
+layout_mode = 2
+theme_override_font_sizes/font_size = 26
+placeholder_text = "000:00"
+
+[node name="Points" type="TextEdit" parent="Racer1"]
+custom_minimum_size = Vector2(38, 53)
+layout_mode = 2
+theme_override_font_sizes/font_size = 26
+placeholder_text = "00"
+
+[node name="Racer2" type="HBoxContainer" parent="."]
+layout_mode = 0
+offset_left = 14.0
+offset_top = 649.0
+offset_right = 310.0
+offset_bottom = 702.0
+theme = ExtResource("1_7ewx5")
+
+[node name="Name" type="TextEdit" parent="Racer2"]
+custom_minimum_size = Vector2(160, 53)
+layout_mode = 2
+theme_override_font_sizes/font_size = 26
+placeholder_text = "Name"
+
+[node name="Time" type="TextEdit" parent="Racer2"]
+custom_minimum_size = Vector2(90, 53)
+layout_mode = 2
+theme_override_font_sizes/font_size = 26
+placeholder_text = "000:00"
+
+[node name="Points" type="TextEdit" parent="Racer2"]
+custom_minimum_size = Vector2(38, 53)
+layout_mode = 2
+theme_override_font_sizes/font_size = 26
+placeholder_text = "00"
+
+[node name="Racer3" type="HBoxContainer" parent="."]
+layout_mode = 0
+offset_left = 14.0
+offset_top = 709.0
+offset_right = 310.0
+offset_bottom = 762.0
+theme = ExtResource("1_7ewx5")
+
+[node name="Name" type="TextEdit" parent="Racer3"]
+custom_minimum_size = Vector2(160, 53)
+layout_mode = 2
+theme_override_font_sizes/font_size = 26
+placeholder_text = "Name"
+
+[node name="Time" type="TextEdit" parent="Racer3"]
+custom_minimum_size = Vector2(90, 53)
+layout_mode = 2
+theme_override_font_sizes/font_size = 26
+placeholder_text = "000:00"
+
+[node name="Points" type="TextEdit" parent="Racer3"]
+custom_minimum_size = Vector2(38, 53)
+layout_mode = 2
+theme_override_font_sizes/font_size = 26
+placeholder_text = "00"
+
+[node name="Racer4" type="HBoxContainer" parent="."]
+layout_mode = 0
+offset_left = 14.0
+offset_top = 771.0
+offset_right = 310.0
+offset_bottom = 824.0
+theme = ExtResource("1_7ewx5")
+
+[node name="Name" type="TextEdit" parent="Racer4"]
+custom_minimum_size = Vector2(160, 53)
+layout_mode = 2
+theme_override_font_sizes/font_size = 26
+placeholder_text = "Name"
+
+[node name="Time" type="TextEdit" parent="Racer4"]
+custom_minimum_size = Vector2(90, 53)
+layout_mode = 2
+theme_override_font_sizes/font_size = 26
+placeholder_text = "000:00"
+
+[node name="Points" type="TextEdit" parent="Racer4"]
+custom_minimum_size = Vector2(38, 53)
+layout_mode = 2
+theme_override_font_sizes/font_size = 26
+placeholder_text = "00"
+
+[connection signal="item_selected" from="Character" to="Ability1" method="_on_character_item_selected"]

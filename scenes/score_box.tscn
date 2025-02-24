@@ -1,0 +1,110 @@
+[gd_scene load_steps=2 format=3 uid="uid://cwhj8y0s6qf5l"]
+
+[ext_resource type="Theme" uid="uid://bvpqa4kh0ofvu" path="res://resources/loadout_box_theme.tres" id="1_tr6rp"]
+
+[node name="score_box" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_right = -1920.0
+offset_bottom = -1080.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="ColorRect" type="ColorRect" parent="."]
+layout_mode = 0
+offset_right = 362.0
+offset_bottom = 405.0
+color = Color(0.141176, 0.27451, 0.470588, 1)
+
+[node name="Label" type="Label" parent="."]
+layout_mode = 0
+offset_left = 109.0
+offset_top = 9.0
+offset_right = 250.0
+offset_bottom = 72.0
+theme = ExtResource("1_tr6rp")
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 45
+text = "Scores"
+
+[node name="Racer1" type="HBoxContainer" parent="."]
+layout_mode = 0
+offset_left = 35.0
+offset_top = 92.0
+offset_right = 328.0
+offset_bottom = 145.0
+theme = ExtResource("1_tr6rp")
+
+[node name="Name" type="TextEdit" parent="Racer1"]
+custom_minimum_size = Vector2(236, 53)
+layout_mode = 2
+theme_override_font_sizes/font_size = 26
+placeholder_text = "Name"
+
+[node name="Points" type="TextEdit" parent="Racer1"]
+custom_minimum_size = Vector2(53, 53)
+layout_mode = 2
+theme_override_font_sizes/font_size = 26
+placeholder_text = "0"
+
+[node name="Racer2" type="HBoxContainer" parent="."]
+layout_mode = 0
+offset_left = 35.0
+offset_top = 168.0
+offset_right = 328.0
+offset_bottom = 221.0
+theme = ExtResource("1_tr6rp")
+
+[node name="Name" type="TextEdit" parent="Racer2"]
+custom_minimum_size = Vector2(236, 53)
+layout_mode = 2
+theme_override_font_sizes/font_size = 26
+placeholder_text = "Name"
+
+[node name="Points" type="TextEdit" parent="Racer2"]
+custom_minimum_size = Vector2(53, 53)
+layout_mode = 2
+theme_override_font_sizes/font_size = 26
+placeholder_text = "0"
+
+[node name="Racer3" type="HBoxContainer" parent="."]
+layout_mode = 0
+offset_left = 35.0
+offset_top = 246.0
+offset_right = 328.0
+offset_bottom = 299.0
+theme = ExtResource("1_tr6rp")
+
+[node name="Name" type="TextEdit" parent="Racer3"]
+custom_minimum_size = Vector2(236, 53)
+layout_mode = 2
+theme_override_font_sizes/font_size = 26
+placeholder_text = "Name"
+
+[node name="Points" type="TextEdit" parent="Racer3"]
+custom_minimum_size = Vector2(53, 53)
+layout_mode = 2
+theme_override_font_sizes/font_size = 26
+placeholder_text = "0"
+
+[node name="Racer4" type="HBoxContainer" parent="."]
+layout_mode = 0
+offset_left = 35.0
+offset_top = 325.0
+offset_right = 328.0
+offset_bottom = 378.0
+theme = ExtResource("1_tr6rp")
+
+[node name="Name" type="TextEdit" parent="Racer4"]
+custom_minimum_size = Vector2(236, 53)
+layout_mode = 2
+theme_override_font_sizes/font_size = 26
+placeholder_text = "Name"
+
+[node name="Points" type="TextEdit" parent="Racer4"]
+custom_minimum_size = Vector2(53, 53)
+layout_mode = 2
+theme_override_font_sizes/font_size = 26
+placeholder_text = "0"

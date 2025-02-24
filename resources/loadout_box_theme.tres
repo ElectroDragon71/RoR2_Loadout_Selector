@@ -1,0 +1,11 @@
+[gd_resource type="Theme" load_steps=3 format=3 uid="uid://bvpqa4kh0ofvu"]
+
+[ext_resource type="Texture2D" uid="uid://6y53fo7f780i" path="res://1x1Transparent.png" id="1_grrqu"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_du7sb"]
+
+[resource]
+Button/colors/font_outline_color = Color(1, 1, 1, 1)
+OptionButton/constants/arrow_margin = -1
+OptionButton/icons/arrow = ExtResource("1_grrqu")
+OptionButton/styles/focus = SubResource("StyleBoxEmpty_du7sb")
